@@ -23,7 +23,8 @@ let package = Package(
             name: "HElib",
             dependencies: ["NTL"],
             path: ".",
-            sources: ["src"]
+            exclude: ["misc", "tests", "utils/test_bootstrapping", "utils/tests"],
+            sources: ["src", "include"]
         ),
         .binaryTarget(
             name: "NTL",
